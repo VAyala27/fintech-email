@@ -1,0 +1,1 @@
+# fintech-email responsive email
