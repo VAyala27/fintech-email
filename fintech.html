@@ -1,0 +1,2540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .three-col-img {
+        width: 200px;
+        max-width: 200px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .header .padding {
+          padding: 10px 0px 0px 0px !important;
+        }
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-thirds img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      @media only screen and (max-width: 399.98px) {
+        .two-col-img {
+          max-width: 100% !important;
+          width: 85% !important;
+        }
+
+        .two-thirds img {
+          max-width: 100% !important;
+          width: 85% !important;
+        }
+
+        .two-columns {
+          padding: 20px 20px !important;
+        }
+
+        .two-columns td,
+        .two-thirds-columns td {
+          text-align: center !important;
+        }
+
+        two-thirds-columns {
+          padding: 10px 20px 20px 20px !important;
+        }
+
+        .footer .content p a {
+          font-size: 10px !important;
+        }
+
+        .one-column .content p {
+          font-size: 11px !important;
+        }
+
+        .one-column .content a {
+          font-size: 11px !important;
+        }
+
+        .one-column .content .btn {
+          font-size: 14px !important;
+        }
+
+        .two-columns .content a {
+          font-size: 11px !important;
+        }
+
+        .two-columns .content p {
+          font-size: 11px !important;
+        }
+
+        .two-thirds-columns .content a {
+          font-size: 11px !important;
+        }
+
+        .two-thirds-columns .content p {
+          font-size: 11px !important;
+        }
+
+        .footer .content p {
+          font-size: 10px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      @media (prefers-color-scheme: dark) {
+        .sub-header .column p {
+          color: #383633 !important;
+        }
+      }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- Start of HTML EMAIL -->
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <!-- Start of container -->
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <tr>
+            <td>
+              <!--Start of one-col header -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td style="padding: 0; font-size: 0; text-align: center">
+                        <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                            <td width="600" valign="top" style="padding: 0;">
+                         <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding" style="padding: 0px">
+                              <table
+                                class="content"
+                                style="
+                                  border-spacing: 0;
+                                  text-align: center;
+                                  width: 600px;
+                                "
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        text-align: center;
+                                        margin: 0;
+                                        margin: 16px;
+                                      "
+                                    >
+                                      <a
+                                        style="
+                                          text-decoration: underline;
+                                          font-family: Arial, Helvetica,
+                                            sans-serif;
+                                          color: #666666;
+                                          font-size: 13px;
+                                          font-weight: normal;
+                                        "
+                                        href="http://example.com"
+                                      >
+                                        View in browser
+                                      </a>
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                </table>
+                  <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!--Start of one-col header -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="header"
+                        style="padding: 0; font-size: 0; text-align: center"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                            <td width="600" valign="top" style="padding: 0;">
+                         <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 0px 0px 10px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="border-spacing: 0; text-align: center"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <img
+                                      class="header-img"
+                                      style="width: 600px; max-width: 100%"
+                                      src="https://i.postimg.cc/FRX7P1sH/fintech-header.png"
+                                      alt="header-img"
+                                    />
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                </table>
+                  <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!--Start of one-col header -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="header"
+                        style="padding: 0; font-size: 0; text-align: center"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                            <td width="600" valign="top" style="padding: 0;">
+                         <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 0px 0px 10px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="
+                                  border-spacing: 0;
+                                  text-align: center;
+                                  width: 600px;
+                                  max-width: 100%;
+                                "
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        color: #663399;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        line-height: 24px;
+                                      "
+                                    >
+                                      29 September 2022
+                                    </p>
+                                    <p
+                                      style="
+                                        line-height: 24px;
+                                        margin: 0;
+                                        color: #3c4858;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-align: center;
+                                        font-weight: bold;
+                                      "
+                                    >
+                                      Daily roundup of the top news on FinTech
+                                      Global
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        background-color: #8abb3f;
+                                        margin: 0;
+                                        color: #fff;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        line-height: 24px;
+                                        font-size: 18px;
+                                        width: 100%;
+                                        padding: 10px 0px;
+                                      "
+                                    >
+                                      Top Story
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                </table>
+                  <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!-- start of two col -->
+              <tr>
+                <td style="padding: 0px 0px 0px 0px">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="two-columns"
+                        style="padding: 20px; font-size: 0"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 50%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        class="two-col-img"
+                                        src="https://i.postimg.cc/y6XSbhR4/fintech-hero.jpg"
+                                        alt="fintech-hero"
+                                        width="260px"
+                                        border="0"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 50%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <h4>
+                                      <a
+                                        style="
+                                          color: #3499db;
+                                          font-size: 14px;
+                                          font-family: Arial, Helvetica,
+                                            sans-serif;
+                                        "
+                                        href="http://example.com"
+                                      >
+                                        FinTech Global must-know companies in
+                                        new ESGFinTech100 list
+                                      </a>
+                                    </h4>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        color: #3c4858;
+                                        margin: 0;
+                                        padding: 10px 0px 0px 0px;
+                                      "
+                                    >
+                                      With the rising importance of ESG in
+                                      financial services, FinTech Global has
+                                      revealed the 100 must know companies in
+                                      its new Global ESGFinTech100.
+                                    </p>
+
+                                    <a
+                                      style="
+                                        color: #8abb3f;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Read more
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end of two col -->
+
+              <!--Start of one-col -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="header"
+                        style="padding: 0; font-size: 0; text-align: center"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                            <td width="600" valign="top" style="padding: 0;">
+                         <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 0px 0px 20px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="border-spacing: 0; text-align: center"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <img
+                                      class="header-img"
+                                      style="width: 600px; max-width: 100%"
+                                      src="https://i.postimg.cc/cJnvMfWz/esg-fintech.png"
+                                      alt="header-img"
+                                    />
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                </table>
+                  <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!--Start of one-col -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td class="header" style="padding: 0; font-size: 0">
+                        <!--[if (gte mso 9)|(IE)]>
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                    <tr>
+                                    <td width="600" valign="top" style="padding: 0;">
+                                 <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 10px 0px 10px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="border-spacing: 0; width: 600px"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        background-color: #8abb3f;
+                                        margin: 0;
+                                        color: #fff;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        line-height: 24px;
+                                        font-size: 18px;
+                                        width: 100%;
+                                        padding: 10px 0px;
+                                      "
+                                    >
+                                      Must-read updates today
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <ul
+                                      style="
+                                        margin: 0;
+                                        margin-left: 25px;
+                                        padding: 20px;
+                                        font-size: 16px;
+                                      "
+                                      align="left"
+                                      type="disc"
+                                    >
+                                      <li>
+                                        <a
+                                          style="
+                                            text-decoration: none;
+                                            color: #3499db;
+                                            font-size: 14px;
+                                            display: block;
+                                            font-weight: bold;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          How money laundering regulations have
+                                          changed over time
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          style="
+                                            text-decoration: none;
+                                            color: #3499db;
+                                            font-size: 14px;
+                                            display: block;
+                                            font-weight: bold;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          PlanetWatchers secures $11m to support
+                                          crop insurers
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          style="
+                                            text-decoration: none;
+                                            color: #3499db;
+                                            font-size: 14px;
+                                            display: block;
+                                            font-weight: bold;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          Why the cost-of-living crisis is
+                                          making young adults put their lives
+                                          "on hold"
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          style="
+                                            text-decoration: none;
+                                            color: #3499db;
+                                            font-size: 14px;
+                                            display: block;
+                                            font-weight: bold;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          Remofirst lands $14.1m for global HR
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          style="
+                                            text-decoration: none;
+                                            color: #3499db;
+                                            font-size: 14px;
+                                            display: block;
+                                            font-weight: bold;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          Tactic raises $11m to support web3 in
+                                          finance
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                          </tr>
+                        </table>
+                          <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!--Start of one-col -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td class="header" style="padding: 0; font-size: 0">
+                        <!--[if (gte mso 9)|(IE)]>
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                    <tr>
+                                    <td width="600" valign="top" style="padding: 0;">
+                                 <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 10px 0px 10px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="
+                                  border-spacing: 0;
+                                  width: 600px;
+                                  text-align: center;
+                                "
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        background-color: #8abb3f;
+                                        margin: 0;
+                                        color: #fff;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        line-height: 24px;
+                                        font-size: 18px;
+                                        width: 100%;
+                                        padding: 10px 0px;
+                                      "
+                                    >
+                                      Bite-sized research
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <h3
+                                      style="
+                                        font-size: 20px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                        line-height: 24px;
+                                        padding: 0px 20px;
+                                        text-align: left;
+                                      "
+                                    >
+                                      German FinTech investment on track to drop
+                                      in 2022, based on funding pace in H1
+                                    </h3>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <img
+                                      style="
+                                        width: 560px;
+                                        max-width: 100%;
+                                        margin: 0 auto;
+                                      "
+                                      src="https://i.postimg.cc/kGfGXcN2/fintech-investment.png"
+                                      alt="fintech-investment"
+                                    />
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                        text-align: left;
+                                        padding: 10px 20px;
+                                        margin: 0;
+                                      "
+                                    >
+                                      German FinTech funding is projected to
+                                      reach $4.2bn in 2022, a 34% drop from 2021
+                                      levels where investment peaked at a
+                                      record-breaking $6.4bn. Deal activity in
+                                      the country is also on track to fall
+                                      although by a less significant 7% to 272
+                                      deals in total for 2022, this indicates
+                                      that the drop in funding is driven by a
+                                      correction in the size of deals deal
+                                      rather than a serious slow down in the
+                                      country’ FinTech sector.
+                                    </p>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                        text-align: left;
+                                        padding: 10px 20px;
+                                        margin: 0;
+                                      "
+                                    >
+                                      Trade Republic, a mobile-only trading
+                                      platform, was the largest FinTech deal in
+                                      Germany during the first half of 2022
+                                      raising a substantial $268m in their
+                                      latest Series C funding round led by
+                                      Ontario Teachers' Pension Plan which
+                                      brings their post-money valuation to $5bn.
+                                      "The additional capital will primarily
+                                      flow into product development to help even
+                                      more people invest their money wisely with
+                                      the help of innovative services and
+                                      technology," the company said.
+                                    </p>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                        text-align: left;
+                                        padding: 10px 20px;
+                                        margin: 0;
+                                      "
+                                    >
+                                      Berlin was the most active FinTech city
+                                      and accounted for 51% of total deals
+                                      announced in H1 2022. The next most active
+                                      city was Munich with a 13% share of total
+                                      deals.
+                                    </p>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                        text-align: left;
+                                        padding: 10px 20px;
+                                        margin: 0;
+                                      "
+                                    >
+                                      The most active FinTech sector in H1 2022
+                                      was Blockchain & Crypto with 23 deals, a
+                                      17% share of total deals. Seven other
+                                      sectors had over ten deals showing
+                                      Germany’s diverse FinTech ecosystem.
+                                    </p>
+
+                                    <p
+                                      style="
+                                        text-align: left;
+                                        padding: 10px 20px;
+                                        margin: 0;
+                                      "
+                                    >
+                                      <a
+                                        style="
+                                          font-size: 14px;
+                                          font-family: Arial, Helvetica,
+                                            sans-serif, sans-serif;
+                                          color: #3c4858;
+                                          font-weight: bold;
+                                        "
+                                        href="http://example.com"
+                                      >
+                                        For more research, visit
+                                        <span style="color: #8abb3f">
+                                          FinTech Global
+                                        </span>
+                                      </a>
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <img
+                                      style="
+                                        width: 600px;
+                                        max-width: 100%;
+                                        margin: 0 auto;
+                                      "
+                                      src="https://i.postimg.cc/Y2ydhwXC/ai-fintech.png"
+                                      alt="ai-fintech"
+                                    />
+
+                                    <p
+                                      style="
+                                        background-color: #8abb3f;
+                                        margin: 0;
+                                        color: #fff;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        line-height: 24px;
+                                        font-size: 18px;
+                                        width: 100%;
+                                        padding: 10px 0px;
+                                        margin-top: 20px;
+                                      "
+                                    >
+                                      Best of the Rest
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                          </tr>
+                        </table>
+                          <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!-- start of two thirds -->
+              <tr>
+                <td style="padding: 0px 0px 0px 0px">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="two-thirds-columns"
+                        style="padding: 10px 20px 20px 20px; font-size: 0"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="33.33%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 33.33%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        class="two-col-img"
+                                        src="https://i.postimg.cc/rp0rnv1Q/fintech-article-1.jpg"
+                                        alt="fintech-article-1"
+                                        width="85%"
+                                        border="0"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="66.66%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 66.66%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      style="
+                                        color: #3499db;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-decoration: underline;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Peachy bags £1.5m for “juicy” alternative
+                                      to health insurance
+                                    </a>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        color: #3c4858;
+                                        margin: 0;
+                                        padding: 10px 0px 0px 0px;
+                                      "
+                                    >
+                                      Peachy, a health InsurTech startup looking
+                                      to relieve the strain on the National
+                                      Health Service (NHS), has raised £1.5m.
+                                    </p>
+
+                                    <a
+                                      style="
+                                        color: #8abb3f;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Read more
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end of two thirds -->
+
+              <!-- start of two thirds -->
+              <tr>
+                <td style="padding: 0px 0px 0px 0px">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="two-thirds-columns"
+                        style="padding: 10px 20px 20px 20px; font-size: 0"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="33.33%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 33.33%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        class="two-col-img"
+                                        src="https://i.postimg.cc/0jxKNjLB/fintech-article-2.jpg"
+                                        alt="fintech-article-1"
+                                        width="85%"
+                                        border="0"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="66.66%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 66.66%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      style="
+                                        color: #3499db;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-decoration: underline;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      BNPL platform SeQura receives €150m senior
+                                      financing
+                                    </a>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        color: #3c4858;
+                                        margin: 0;
+                                        padding: 10px 0px 0px 0px;
+                                      "
+                                    >
+                                      BNPL platform SeQura has received €150m in
+                                      senior financing through an asset-backed
+                                      agreement with Citi.
+                                    </p>
+
+                                    <a
+                                      style="
+                                        color: #8abb3f;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Read more
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end of two thirds -->
+
+              <!--Start of one-col -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td style="padding: 0; font-size: 0">
+                        <!--[if (gte mso 9)|(IE)]>
+                                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                        <td width="600" valign="top" style="padding: 0;">
+                                     <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 10px 0px 10px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="
+                                  border-spacing: 0;
+                                  width: 600px;
+                                  text-align: center;
+                                "
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a href="http://example.com">
+                                      <img
+                                        style="
+                                          width: 600px;
+                                          max-width: 100%;
+                                          margin: 0 auto;
+                                        "
+                                        src="https://i.postimg.cc/7hytY1Pr/wealth-fintech.png"
+                                        alt="wealth-fintech"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                              </tr>
+                            </table>
+                              <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!-- start of two thirds -->
+              <tr>
+                <td style="padding: 0px 0px 0px 0px">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="two-thirds-columns"
+                        style="padding: 10px 20px 20px 20px; font-size: 0"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                             <table width="100%" style="border-spacing: 0;" role="presentation">
+                             <tr>
+                             <td width="33.33%" valign="top" style="padding: 0;">
+                          <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 33.33%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        class="two-col-img"
+                                        src="https://i.postimg.cc/7LFTpmXD/fintech-article-3.jpg"
+                                        alt="fintech-article-3"
+                                        width="85%"
+                                        border="0"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="66.66%" valign="top" style="padding: 0;">
+                          <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 66.66%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      style="
+                                        color: #3499db;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-decoration: underline;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Insurance customer experience “sucks”,
+                                      says wefox
+                                    </a>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        color: #3c4858;
+                                        margin: 0;
+                                        padding: 10px 0px 0px 0px;
+                                      "
+                                    >
+                                      Berlin-based InsurTech wefox has published
+                                      a report revealing a widespread
+                                      dissatisfaction and lack of trust in the
+                                      global insurance industry.
+                                    </p>
+
+                                    <a
+                                      style="
+                                        color: #8abb3f;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Read more
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                             </td>
+                             </tr>
+                             </table>
+                          <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end of two thirds -->
+
+              <!-- start of two thirds -->
+              <tr>
+                <td style="padding: 0px 0px 0px 0px">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="two-thirds-columns"
+                        style="padding: 10px 20px 20px 20px; font-size: 0"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                             <table width="100%" style="border-spacing: 0;" role="presentation">
+                             <tr>
+                             <td width="33.33%" valign="top" style="padding: 0;">
+                          <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 33.33%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        class="two-col-img"
+                                        src="https://i.postimg.cc/yxPg3BKY/fintech-article-4.jpg"
+                                        alt="fintech-article-4"
+                                        width="85%"
+                                        border="0"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="66.66%" valign="top" style="padding: 0;">
+                          <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 66.66%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      style="
+                                        color: #3499db;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-decoration: underline;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      New UK bill set to crack down on fraud and
+                                      money laundering
+                                    </a>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        color: #3c4858;
+                                        margin: 0;
+                                        padding: 10px 0px 0px 0px;
+                                      "
+                                    >
+                                      The UK government has introduced the
+                                      Economic Crime and Corporate Transparency
+                                      Bill in an attempt to drive ‘dirty money’
+                                      out of the UK.
+                                    </p>
+
+                                    <a
+                                      style="
+                                        color: #8abb3f;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Read more
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                             </td>
+                             </tr>
+                             </table>
+                          <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end of two thirds -->
+
+              <!--Start of one-col -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td class="header" style="padding: 0; font-size: 0">
+                        <!--[if (gte mso 9)|(IE)]>
+                                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                                            <tr>
+                                            <td width="600" valign="top" style="padding: 0;">
+                                         <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 10px 0px 10px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="
+                                  border-spacing: 0;
+                                  width: 600px;
+                                  text-align: center;
+                                "
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a href="http://example.com">
+                                      <img
+                                        style="
+                                          width: 600px;
+                                          max-width: 100%;
+                                          margin: 0 auto;
+                                        "
+                                        src="https://i.postimg.cc/8PLDHwfM/reg-fintech.png
+                                              "
+                                        alt="ai-fintech"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                  </tr>
+                                </table>
+                                  <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!-- start of two thirds -->
+              <tr>
+                <td style="padding: 0px 0px 0px 0px">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="two-thirds-columns"
+                        style="padding: 10px 20px 20px 20px; font-size: 0"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                                 <table width="100%" style="border-spacing: 0;" role="presentation">
+                                 <tr>
+                                 <td width="33.33%" valign="top" style="padding: 0;">
+                              <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 33.33%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        class="two-col-img"
+                                        src="https://i.postimg.cc/sX5Zy70W/fintech-article-5.jpg"
+                                        alt="fintech-article-5"
+                                        width="85%"
+                                        border="0"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                              </td><td width="66.66%" valign="top" style="padding: 0;">
+                              <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 66.66%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      style="
+                                        color: #3499db;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-decoration: underline;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Affirm teams with Amazon to introduce
+                                      pay-over-time option in Canada
+                                    </a>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        color: #3c4858;
+                                        margin: 0;
+                                        padding: 10px 0px 0px 0px;
+                                      "
+                                    >
+                                      Affirm has expanded its relationship with
+                                      Amazon to the Canadian market to boost
+                                      payment flexibility for customers.
+                                    </p>
+
+                                    <a
+                                      style="
+                                        color: #8abb3f;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Read more
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                                 </td>
+                                 </tr>
+                                 </table>
+                              <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end of two thirds -->
+
+              <!-- start of two thirds -->
+              <tr>
+                <td style="padding: 0px 0px 0px 0px">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        class="two-thirds-columns"
+                        style="padding: 10px 20px 20px 20px; font-size: 0"
+                      >
+                        <!--[if (gte mso 9)|(IE)]>
+                                 <table width="100%" style="border-spacing: 0;" role="presentation">
+                                 <tr>
+                                 <td width="33.33%" valign="top" style="padding: 0;">
+                              <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 33.33%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        class="two-col-img"
+                                        src="https://i.postimg.cc/PrX8sLbL/fintech-article-6.jpg"
+                                        alt="fintech-article-6"
+                                        width="85%"
+                                        border="0"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                              </td><td width="66.66%" valign="top" style="padding: 0;">
+                              <![endif]-->
+
+                        <table
+                          class="column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            width: 66.66%;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td class="padding">
+                              <table
+                                class="content"
+                                style="border-spacing: 0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a
+                                      style="
+                                        color: #3499db;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        text-decoration: underline;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      How to invest’ searches nearly double in
+                                      the UK
+                                    </a>
+
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        color: #3c4858;
+                                        margin: 0;
+                                        padding: 10px 0px 0px 0px;
+                                      "
+                                    >
+                                      Searches for 'how to invest' have surged
+                                      by 186% in the UK, according to research
+                                      from Investing Reviews.
+                                    </p>
+
+                                    <a
+                                      style="
+                                        color: #8abb3f;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                      "
+                                      href="http://example.com"
+                                    >
+                                      Read more
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                                 </td>
+                                 </tr>
+                                 </table>
+                              <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end of two thirds -->
+
+              <!--Start of one-col -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td class="header" style="padding: 0; font-size: 0">
+                        <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                <td width="600" valign="top" style="padding: 0;">
+                                             <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 10px 0px 10px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="
+                                  border-spacing: 0;
+                                  width: 600px;
+                                  text-align: center;
+                                "
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <a href="http://example.com">
+                                      <img
+                                        style="
+                                          width: 600px;
+                                          max-width: 100%;
+                                          margin: 0 auto;
+                                        "
+                                        src="https://i.postimg.cc/8PLDHwfM/reg-fintech.png"
+                                        alt="reg-fintech"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!--Start of one-col -->
+              <tr>
+                <td style="padding: 0px 0 0px 0">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td style="padding: 0; font-size: 0">
+                        <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                <td width="600" valign="top" style="padding: 0;">
+                                             <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 10px 0px 10px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="border-spacing: 0; width: 600px"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px 20px 10px 20px;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                      "
+                                    >
+                                      <span style="font-weight: bold">
+                                        Received this email from a friend or
+                                        colleague?
+                                      </span>
+                                      Click the button below to get our free
+                                      daily email delivered to your inbox each
+                                      morning:
+                                    </p>
+
+                                    <p
+                                      style="
+                                        margin: 0px;
+                                        text-align: center;
+                                        margin: 10px 0px 20px 0px;
+                                      "
+                                    >
+                                      <a
+                                        class="btn"
+                                        style="
+                                          font-size: 18px;
+                                          font-family: Arial, Helvetica,
+                                            sans-serif;
+                                          color: #ffffff;
+                                          font-weight: normal;
+                                          padding: 10px 20px;
+                                          vertical-align: middle;
+                                          background-color: #0092ff;
+                                          border-radius: 4px;
+                                        "
+                                        href="http://example.com"
+                                      >
+                                        Sign up for the newsletter here
+                                      </a>
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td
+                                    height="5"
+                                    style="background-color: #c8c8c8"
+                                  ></td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px 20px;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                        margin: 10px 0px 10px 0px;
+                                      "
+                                    >
+                                      Get in touch if you would like to leverage
+                                      our extensive network of senior
+                                      decision-makers at leading financial
+                                      institutions, over 120,000 newsletter
+                                      subscribers and more than 40,000 social
+                                      media followers to meet your business
+                                      objectives.
+                                    </p>
+                                    <p
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px 20px;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        margin: 10px 0px 10px 0px;
+                                      "
+                                    >
+                                      Contact Mariyan at
+                                      <a
+                                        style="
+                                          text-decoration: underline;
+                                          color: #0092ff;
+                                        "
+                                        href="http://example.com"
+                                      >
+                                        MDimitrov@FinTech.Global
+                                      </a>
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td
+                                    height="5"
+                                    style="background-color: #c8c8c8"
+                                  ></td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px 20px;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        margin: 10px 0px 0px 0px;
+                                      "
+                                    >
+                                      If you have any press releases please send
+                                      them through to
+                                    </p>
+
+                                    <p
+                                      style="
+                                        margin: 0px;
+                                        padding: 0px 20px;
+                                        font-size: 14px;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif, sans-serif;
+                                        color: #3c4858;
+                                        text-align: center;
+                                      "
+                                    >
+                                      <a
+                                        style="
+                                          text-decoration: underline;
+                                          color: #0092ff;
+                                        "
+                                        href="http://example.com"
+                                      >
+                                        editorial@fintech.global
+                                      </a>
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+
+              <!--Start of one-col -->
+              <tr>
+                <td style="padding: 0px 0 0px 0; background-color: #f9fafc">
+                  <table
+                    width="100%"
+                    style="border-spacing: 0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td style="padding: 0; font-size: 0">
+                        <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                <td width="600" valign="top" style="padding: 0;">
+                                             <![endif]-->
+
+                        <table
+                          class="one-column"
+                          style="
+                            border-spacing: 0;
+                            vertical-align: top;
+                            max-width: 600px;
+                            display: inline-block;
+                          "
+                          role="presentation"
+                        >
+                          <tr>
+                            <td
+                              class="padding"
+                              style="padding: 10px 0px 0px 0px"
+                            >
+                              <table
+                                class="content"
+                                style="border-spacing: 0; width: 600px"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      text-align: center;
+                                      padding: 10px 0px 10px 0px;
+                                    "
+                                  >
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        style="padding: 0px 5px"
+                                        src="https://i.postimg.cc/qvghq954/fintech-twitter.png"
+                                        width="32px"
+                                        border="0"
+                                        title="twitter"
+                                        alt="twitter"
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        style="padding: 0px 5px"
+                                        src="https://i.postimg.cc/P5cLw2gZ/fintect-linkedin.png"
+                                        width="32px"
+                                        border="0"
+                                        title="linkedin"
+                                        alt="linkedin"
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://example.com"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        style="padding: 0px 5px"
+                                        src="https://i.postimg.cc/Dyx4225x/fintech-more.png"
+                                        width="32px"
+                                        border="0"
+                                        title="read-more"
+                                        alt="read-more"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        font-size: 10px;
+                                        color: #888888;
+                                        font-weight: bold;
+                                        line-height: 130%;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        line-height: 160%;
+                                        margin: 0;
+                                      "
+                                    >
+                                      This email is for business users only. You
+                                      are receiving this email because: (i) you
+                                      requested to be included on our mailing
+                                      list: or (ii) we have an existing business
+                                      relationship with your organization; or
+                                      (iii) it adheres to the basis of
+                                      legitimate interest as defined by the UK
+                                      ICO. If you do not wish to receive any
+                                      further emails from us simply unsubscribe
+                                      from this list below. Please visit our
+                                      website www.FinTech.Global to review our
+                                      Privacy Policy
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        text-align: center;
+                                        margin: 0;
+                                        margin: 10px 0px;
+                                      "
+                                    >
+                                      <a
+                                        style="
+                                          text-decoration: underline;
+                                          color: #7a7878;
+                                          font-size: 14px;
+                                          font-weight: normal;
+                                          font-family: Arial, Helvetica,
+                                            sans-serif;
+                                        "
+                                        href="http://example.com"
+                                      >
+                                        Unsubscribe here
+                                      </a>
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        width: 100%;
+                                        background: #000;
+                                        color: #fff;
+                                        margin: 0;
+                                        padding: 20px 0px;
+                                        text-align: center;
+                                        font-size: 14px;
+                                      "
+                                    >
+                                      Copyright © 2022 Investor Networks Ltd,
+                                      All rights reserved
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                      <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End of one col   -->
+            </td>
+          </tr>
+        </table>
+        <!-- End of container -->
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+      <!-- End of HTML EMAIL -->
+    </center>
+  </body>
+</html>
